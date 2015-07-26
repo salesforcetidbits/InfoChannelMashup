@@ -24,9 +24,9 @@ public with sharing class ChatterPostChannel implements InfoChannel{
 		return createdById;
 	}
 
-    public String getCreatedByName(){
-        return createdByName;
-    } 
+	public String getCreatedByName(){
+		return createdByName;
+	} 
 
 	public PageReference createNew(){
 		return null;
