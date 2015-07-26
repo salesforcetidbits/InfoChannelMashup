@@ -1,0 +1,26 @@
+<apex:page standardController="Account" extensions="InfoMash_Account" showHeader="false" sidebar="false"><apex:form >
+
+	<apex:pageBlock title="MyPageBlockTitle">
+
+		<apex:pageBlockButtons location="top">
+			
+		</apex:pageBlockButtons>
+
+		<apex:pageBlockSection title="MyPageBlockSectionTitle">
+
+			<apex:pageBlockTable value="{!mashes}" var="m" >
+
+				<apex:column headerValue="Create New">
+					<apex:commandButton value="Create a New" action="{!m.channel.createNew}" />
+				</apex:column>
+
+				<apex:column value="{!m.channel.body}" headerValue="Body"/>
+				<apex:column value="{!m.channel.createdByName}" headerValue="Created By" />
+				<apex:column value="{!m.channel.createdDate}" headerValue="Created Date" />
+
+			</apex:pageBlockTable>
+
+		</apex:pageBlockSection>
+
+	</apex:pageBlock>
+</apex:form></apex:page>
