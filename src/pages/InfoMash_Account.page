@@ -1,26 +1,22 @@
-<apex:page standardController="Account" extensions="InfoMash_Account" showHeader="false" sidebar="false"><apex:form >
+<apex:page standardController="Account" extensions="InfoMash_Account" showHeader="false" sidebar="false" standardStylesheets="false"><apex:form >
 
-	<apex:pageBlock title="MyPageBlockTitle">
+	<apex:stylesheet value="{!URLFOR($Resource.Bootstrap, 'bootstrap-3.3.5-dist/css/bootstrap.min.css')}"/>
+    <apex:includeScript value="{!$Resource.jQuery}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Bootstrap, 'bootstrap-3.3.5-dist/js/bootstrap.min.js')}"/>
 
-		<apex:pageBlockButtons location="top">
-			
-		</apex:pageBlockButtons>
+	<div class="container">
 
-		<apex:pageBlockSection title="MyPageBlockSectionTitle">
+		<apex:repeat value="{!mashes}" var="m">
 
-			<apex:pageBlockTable value="{!mashes}" var="m" >
+			<div class="row well">
+				<div class="col-sm-4">{!m.createdByName}</div>
+				<div class="col-sm-4">{!m.channel}</div>
+				<div class="col-sm-3 col-sm-offset-1">{!m.createdDate}</div>
+				<div class="visible-xs col-xs-12"><br /></div>
+				<div class="col-sm-12">{!m.body}</div>
+			</div>
 
-				<apex:column headerValue="Create New">
-					<apex:commandButton value="Create a New" action="{!m.channel.createNew}" />
-				</apex:column>
+		</apex:repeat>
 
-				<apex:column value="{!m.channel.body}" headerValue="Body"/>
-				<apex:column value="{!m.channel.createdByName}" headerValue="Created By" />
-				<apex:column value="{!m.channel.createdDate}" headerValue="Created Date" />
-
-			</apex:pageBlockTable>
-
-		</apex:pageBlockSection>
-
-	</apex:pageBlock>
+	</div>
 </apex:form></apex:page>

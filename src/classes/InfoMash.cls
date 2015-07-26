@@ -22,8 +22,7 @@ global class InfoMash implements comparable {
         else if(channel.getCreatedDate() < comparedInfoChannel.channel.getCreatedDate()){
             result = 1;
         }
-
-        System.debug(result);
+        
         return result;
     }   
 }
