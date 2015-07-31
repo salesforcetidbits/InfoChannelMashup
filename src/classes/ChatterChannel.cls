@@ -1,4 +1,4 @@
-public with sharing class ChatterChannel extends InfoChannel{
+public with sharing class ChatterChannel extends InfoChannel {
 
 	public ChatterChannel(FeedItem f) {
 		createdDate = f.createdDate;

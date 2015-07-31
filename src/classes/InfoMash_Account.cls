@@ -26,6 +26,7 @@ public with sharing class InfoMash_Account {
             mashes.add(new ChatterChannel(c));
         }
 
+        //Sort using custominterface logic
         mashes.sort();
     }
 }
