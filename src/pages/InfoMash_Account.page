@@ -8,11 +8,11 @@
 
 		<apex:repeat value="{!mashes}" var="m">
 
-			<div class="row well">
-				<div class="col-sm-4">{!m.createdByName}</div>
-				<div class="col-sm-4">{!m.channel}</div>
-				<div class="col-sm-3 col-sm-offset-1">{!m.createdDate}</div>
-				<div class="visible-xs col-xs-12"><br /></div>
+			<div class="row well well-sm">
+				<div class="col-sm-4"><code>{!m.createdByName}</code></div>
+				<div class="col-sm-4"><code>{!m.channel}</code></div>
+				<div class="col-sm-2 col-sm-offset-2"><code>{!m.createdDate}</code></div>
+				<div class="visible-sm visible-md visible-lg col-sm-12 col-md-12 col-lg-12"><br /></div>
 				<div class="col-sm-12">{!m.body}</div>
 			</div>
 
