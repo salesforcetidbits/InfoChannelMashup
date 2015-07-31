@@ -1,3 +1,11 @@
+/**
+* @author Robert Strunk
+* @date 2015-07-25
+*
+* @description An abstract class that represents an information source for an sObject.
+*
+*/
+
 public abstract class InfoChannel implements comparable {
 
     public String   createdDate     {get;set;}

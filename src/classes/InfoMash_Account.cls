@@ -1,3 +1,12 @@
+/**
+* @author Robert Strunk
+* @date 2015-07-25
+*
+* @description Visualforce controller extension for the Account sObject that pulls in all
+* available information channels and adds them to one common collection.
+*
+*/
+
 public with sharing class InfoMash_Account {
 
     private final Account myAccount;
