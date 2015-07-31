@@ -1,8 +1,8 @@
 <apex:page standardController="Account" extensions="InfoMash_Account" showHeader="false" sidebar="false" standardStylesheets="false"><apex:form >
 
 	<apex:stylesheet value="{!URLFOR($Resource.Bootstrap, 'bootstrap-3.3.5-dist/css/bootstrap.min.css')}"/>
-    <apex:includeScript value="{!$Resource.jQuery}"/>
-    <apex:includeScript value="{!URLFOR($Resource.Bootstrap, 'bootstrap-3.3.5-dist/js/bootstrap.min.js')}"/>
+	<apex:includeScript value="{!$Resource.jQuery}"/>
+	<apex:includeScript value="{!URLFOR($Resource.Bootstrap, 'bootstrap-3.3.5-dist/js/bootstrap.min.js')}"/>
 
 	<div class="container">
 
