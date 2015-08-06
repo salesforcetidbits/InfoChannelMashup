@@ -7,5 +7,4 @@
 
 `Simple but powerful`
 
-Front end is irrelevant.
-
+Front end is just a basic list wrapped in bootstrap just to show what the stack is doing.
