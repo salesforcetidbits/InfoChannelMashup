@@ -3,11 +3,9 @@
 	<apex:stylesheet value="{!URLFOR($Resource.Bootstrap, 'bootstrap-3.3.5-dist/css/bootstrap.min.css')}"/>
 	<apex:includeScript value="{!$Resource.jQuery}"/>
 	<apex:includeScript value="{!URLFOR($Resource.Bootstrap, 'bootstrap-3.3.5-dist/js/bootstrap.min.js')}"/>
-
+	
 	<div class="container">
-
 		<apex:repeat value="{!mashes}" var="m">
-
 			<div class="row well well-sm">
 				<div class="col-sm-4"><code>{!m.createdByName}</code></div>
 				<div class="col-sm-4"><code>{!m.channel}</code></div>
@@ -15,8 +13,7 @@
 				<div class="visible-sm visible-md visible-lg col-sm-12 col-md-12 col-lg-12"><br /></div>
 				<div class="col-sm-12">{!m.body}</div>
 			</div>
-
 		</apex:repeat>
-
 	</div>
+	
 </apex:form></apex:page>
