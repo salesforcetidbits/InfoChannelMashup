@@ -7,4 +7,4 @@
 
 `Simple but powerful`
 
-Front end is just a basic list wrapped in bootstrap just to show what the stack is doing.
+Front end is just a basic list collection wrapped in bootstrap to show what the stack is outputting.
